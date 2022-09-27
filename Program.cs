@@ -83,7 +83,7 @@ for (int i = 0; i < strCount; i++)
 {
     for (int j = 0; j < colCount; j++)
     {
-       arrA[i,j] = rnd.Next(1,6); 
+        arrA[i,j] = rnd.Next(1,6); 
         System.Console.Write(arrA[i,j] + " ");
     }  
     System.Console.WriteLine();
