@@ -96,7 +96,7 @@ for (int i = 0; i < strCount; i++)
 {
     for (int j = 0; j < colCount; j++)
     {
-        arrB[i,j] = rnd.Next(-5,5); 
+        arrB[i,j] = rnd.Next(1,6); 
         System.Console.Write(arrB[i,j] + " ");
     }  
     System.Console.WriteLine();
