@@ -135,5 +135,39 @@
 // 33 41 23
 // 17 28 34
 
+int N = 7;
+int strCount = N;
+int colCount = N;
+int [,] arr = new int [strCount,colCount];
 
+Random rnd = new Random();
+for (int i = 0; i < strCount; i++)
+{
+    for (int j = 0; j < colCount; j++)
+    {
+        int tmp = rnd.Next(10,99);
+        while (true)
+        {
+            if (!Contains(arr ,tmp))
+            break;
+            tmp = rnd.Next(10,99);
+        }
+         arr[i,j] = rnd.Next(10,99); 
+        System.Console.Write(arr[i,j] + " ");
+    }  
+    System.Console.WriteLine();
+}
 
+bool Contains(int[,] arr , int number) 
+{
+    for (int i = 0; i < strCount; i++)
+        {
+            for (int j = 0; j < colCount; j++)
+            {
+                if (arr[i,j] == number)
+                return true;
+
+            }
+        }
+    return false;
+}
