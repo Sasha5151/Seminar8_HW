@@ -73,51 +73,51 @@
 // 18 20
 // 15 18
 
-int N = 2;
-int strCount = N;
-int colCount = N;
-int [,] arrA = new int [strCount,colCount];
+// int N = 2;
+// int strCount = N;
+// int colCount = N;
+// int [,] arrA = new int [strCount,colCount];
 
-Random rnd = new Random();
-for (int i = 0; i < strCount; i++)
-{
-    for (int j = 0; j < colCount; j++)
-    {
-        arrA[i,j] = rnd.Next(1,6); 
-        System.Console.Write(arrA[i,j] + " ");
-    }  
-    System.Console.WriteLine();
-}
-System.Console.WriteLine();
+// Random rnd = new Random();
+// for (int i = 0; i < strCount; i++)
+// {
+//     for (int j = 0; j < colCount; j++)
+//     {
+//         arrA[i,j] = rnd.Next(1,6); 
+//         System.Console.Write(arrA[i,j] + " ");
+//     }  
+//     System.Console.WriteLine();
+// }
+// System.Console.WriteLine();
 
-int [,] arrB = new int [strCount,colCount];
+// int [,] arrB = new int [strCount,colCount];
 
-for (int i = 0; i < strCount; i++)
-{
-    for (int j = 0; j < colCount; j++)
-    {
-        arrB[i,j] = rnd.Next(1,6); 
-        System.Console.Write(arrB[i,j] + " ");
-    }  
-    System.Console.WriteLine();
-}
-System.Console.WriteLine();
+// for (int i = 0; i < strCount; i++)
+// {
+//     for (int j = 0; j < colCount; j++)
+//     {
+//         arrB[i,j] = rnd.Next(1,6); 
+//         System.Console.Write(arrB[i,j] + " ");
+//     }  
+//     System.Console.WriteLine();
+// }
+// System.Console.WriteLine();
 
-int [,] arrC = new int [strCount,colCount];
+// int [,] arrC = new int [strCount,colCount];
 
-for (int i = 0; i < strCount; i++)
-{
-    for (int j = 0; j < colCount; j++)
-    {
-        arrC[i,j]=0;
-        for (int k = 0; k < N; k++)
-        {
-            arrC[i,j] += arrA[i,k]*arrB[k,j];           
-        }
-         System.Console.Write(arrC[i,j] + " ");
-    }  
-    System.Console.WriteLine();
-}
+// for (int i = 0; i < strCount; i++)
+// {
+//     for (int j = 0; j < colCount; j++)
+//     {
+//         arrC[i,j]=0;
+//         for (int k = 0; k < N; k++)
+//         {
+//             arrC[i,j] += arrA[i,k]*arrB[k,j];           
+//         }
+//          System.Console.Write(arrC[i,j] + " ");
+//     }  
+//     System.Console.WriteLine();
+// }
 
 
 
@@ -134,3 +134,6 @@ for (int i = 0; i < strCount; i++)
 // 10 11 55
 // 33 41 23
 // 17 28 34
+
+
+
